@@ -44,29 +44,8 @@
                 color: #FFFFFF;
                  }
                  
-            /* The hero image */
-            .hero-image {
-                /* The image used */
-                background-image: url("antony.jpg");
-            
-                /* Set a specific height */
-                height: 50%;
-            
-                /* Position and center the image to scale nicely on all screens */
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-            }
-            
-            /* Place text in the middle of the image */
-            .hero-text {
-                text-align: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
+            .center {
+               text-align: center;
             }
             
             .font-size {
@@ -191,17 +170,19 @@
               from {opacity: .9} 
               to {opacity: 1}
             }
-            hrbestsellers {
-            
+            iframe {
+                height:110px;
+                width:400px;
                 
             }
-            .anthony {
-                z-index:-1;
+            #credit_cards {
+                position:relative;
+                margin-top:100px;
+               
             }
-               #map {
-        height: 400px;
-        width: 100%;
-       }
+            .monday2sunday {
+                text-align: right;
+            }
     </style>
     
     </head>
@@ -211,9 +192,9 @@
             <div class="col-sm-6" style="font-size:15px">(847) 410-7779 | EMAIL</div>
             <div class="col-sm-6">
                 <ul class="socialmedia">
-                  <li class="items"><a rel="nofollow" href="https://www.facebook.com/BobaBurger"><img alt="Facebook" title="Facebook" src="images/social_facebook2.png" width="29" height="22"></a></li>
-                  <li class="items"><a rel="nofollow" href="http://www.yelp.com/biz/boba-burger-morton-grove-2?osq=boba+burger"><img alt="Yelp" title="Yelp" src="images/social_yelp2.png" width="27" height="23"></a></li>
-                  <li class="items"><a rel="nofollow" href="https://instagram.com/bobaburger/"><img alt="Instagram" title="Instagram" src="images/social_instagram2.png" width="39" height="27"></a></li>
+                    <li class="items"><a rel="nofollow" href="https://instagram.com/bobaburger/"><img alt="Instagram" title="Instagram" src="images/social_instagram2.png" width="39" height="27"></a></li>
+                    <li class="items"><a rel="nofollow" href="http://www.yelp.com/biz/boba-burger-morton-grove-2?osq=boba+burger"><img alt="Yelp" title="Yelp" src="images/social_yelp2.png" width="27" height="23"></a></li>
+                    <li class="items"><a rel="nofollow" href="https://www.facebook.com/BobaBurger"><img alt="Facebook" title="Facebook" src="images/social_facebook2.png" width="29" height="22"></a></li>
                 </ul>
         </div>
         <img class="logo" src="images/bobaburger.png" alt="logo" width="120" height="120">
@@ -234,13 +215,12 @@
           
         </ul>
                 <br/>
-                <div class="hero-image">
-          <div class="hero-text">
-            <h4>Welcome to</h4>
-            <h4>And I'm a Photographer</h4>
-            <blockquote>"We are two brothers looking to not only share with you the food we love, but also the warmth and kindness that surrounds us every day. Thank you for stopping by our corner of comfort food!"</blockquote>
-          </div>
-        </div>
+    <div class="welcome-to">
+        <h4 class="center text-info">Welcome to</h4>
+       <div> <h1 class="center text-primary font-size">Boba Burger</h1></div>
+       <div class="center"><img src="images/antony.jpg" alt="anthony background" class="anthony" height="287"></img></div>
+        <div><p class="center">"We are two brothers looking to not only share with you the food we love, but also the warmth and kindness that surrounds us every day. Thank you for stopping by our corner of comfort food!"</p></div>
+    </div>
         <hr/>
         
         <h2 class="center">Best Sellers</h2>
@@ -333,18 +313,20 @@
             </div>
         </div>
         <!--insert link to menu here-->
-        <br/>
         <hr/>
         <footer>
             
             <div class="row">
                 <div class="col-md-5">
                     <h6>8530 Waukegan Rd Morton Grove, IL 60053</h6>
-                </div>
-                <div class="col-md-4">
-                    <h6>Monday–Sunday: 11:30am–12am</h6>
+                    <h6>We located in the Bowling Alley</h6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.3031341095743!2d-87.80211368416492!3d42.036679679209996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc8eb489df05f%3A0x4c526903ceba1273!2s8530+Waukegan+Rd%2C+Morton+Grove%2C+IL+60053!5e0!3m2!1sen!2sus!4v1525272163286" width="400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="col-md-3">
+                    
+                </div>
+                <div class="col-md-4">
+                    <h6 class="monday2sunday">Monday–Sunday: 11:30am–12am</h6>
                     <ul id="credit_cards">
                         <li><img alt="VISA" src="images/visa.png" style="width:65px"></li>
                         <li><img alt="MasterCard" src="images/mastercard.png" style="width:65px"></li> 
