@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-        <title>Boba Burger- (add more description)</title>
+        <title>Boba Burger</title>
         <style>
             body {
                background-image: url("images/background.jpg");
@@ -32,7 +32,7 @@
                 background-color: #4CAF50;
             }
             
-            header {
+            .header {
                 background-color: #262626;
                 color: #FFFFFF;
             }
@@ -61,6 +61,7 @@
             
             .justify {
                 text-align: justify;
+                text-justify: inter-word;
             }
             .socialmedia .items:hover{
                 -webkit-border-radius: 20px;
@@ -79,7 +80,53 @@
                 margin:20px;
                 padding:10px;
             }
+            .footer-logo {
+                text-align:left;
+            }
+            .info {
+                text-align:left;
+            }
+            .textwidget, .half {
+                position:relative;
+                margin:0px 10px 10px 10px;
+            }
+            .half {
+                text-align:right;
+            }
+            .textwidget {
+                text-align:right;
+                
+            }
+            .half2 {
+                text-align:right;
+            }
             
+            .imgsize {
+                width:100px;
+                height:100px;
+            }
+            
+            .img {
+                padding: 4px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden
+            }
+            
+            body {
+            padding: 0;
+            margin: 0;
+            }
+            .copy {
+                text-align:center;
+            }
+        
             
     </style>
     
@@ -110,11 +157,10 @@
           <li class="nav-item">
             <a class="nav-link disabled" href="contact.html">Contact</a>
           </li>
-          
         </ul>
         <br>
-        <div class="banner">
-            <img src="images/My Post.jpg" height="175" width="1100"></img>
+        <div>
+            <img src="images/MyPost.jpg" height="175" width="1100"></img>
         </div>
         <hr/>
         <!--REVIEW-->
@@ -135,48 +181,50 @@
             </div>
         </div>
         <hr/>
-        <!--best sellers--->
+        <!--Best Sellers--->
         <h2 class="center">Best Sellers</h2>
             <div class="row">
-                <div class="col-sm-3"><img src="images/burger.jpg" height="200"></img></div>
-                <div class="col-sm-3"><img src="images/burger.jpg" height="200"></img></div>
-                <div class="col-sm-3"><img src="images/burger.jpg" height="200"></img></div>
+                <div class="col-sm-3 img"><img src="images/burger.jpg" height="200"></img></div>
+                <div class="col-sm-3 img"><img src="images/hotdog.jpg" height="200"></img></div>
+                <div class="col-sm-3 img"><img src="images/eggburger.jpg" height="200"></img></div>
             </div>
             <div class="row">
-                <div class="col-sm-3"><img src="images/burger.jpg" height="200"></img></div>
-                <div class="col-sm-3"><img src="images/burger.jpg" height="200"></img></div>
-                <div class="col-sm-3"><img src="images/burger.jpg" height="200"></img></div>
+                <div class="col-sm-3 img"><img src="images/beast.jpg" height="200" width="4000"></img></div>
+                <div class="col-sm-3 img"><img src="images/lmao.jpg" height="200"></img></div>
+                <div class="col-sm-3 img"><img src="images/borger.jpg" height="200"></img></div>
             </div>
-        
         
         <hr/>
         <footer>
-           <div id="colophon" role="contentinfo">
-			<div id="site-info">
-            <div class="footer-logo"><img src="images/bobaburger.png" class="choma-header-logo" alt="choma"></div>
-			  <b>Boba Burger</b><br>
-                8530 Waukegan Rd
-                Morton Grove, IL 60053<br>
-                Phone : (847) 410-7779                     
-                Copyright  © 2018<br>
-                <a href="http://www.wildwoodtavern.net/privacy-policy/">Privacy Policy</a>
-            </div><!-- #site-info -->
-          
-         	<div id="storeHours">
-        	<div>		
-        	<div class="textwidget"><b style="font-size:15px;">Hours</b><br>
-        	<div class="half">
-                Sunday: 11:30AM–12AM<br>
-                Monday: 11:30AM–12AM<br>
-                Tuesday: 11:30AM–12AM</div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="colophon" role="contentinfo">
+        			<div id="site-info">
+                    <div class="footer-logo"><img src="images/bobaburger.png" class="choma-header-logo imgsize" alt="choma"></div>
+        		        <div class="info"><b>Boba Burger</b><br>
+                        8530 Waukegan Rd<br>
+                        Morton Grove, IL 60053<br>
+                        Phone : (847) 410-7779 <br>
+                        <br>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="half">
-                Wednesday: 11:30AM–12AM<br>
-                Thursday: 11:30AM–12AM<br>
-                Friday: 11:30AM–12AM<br>
-                Saturday: 11:30AM–12AM</div>
-		    </div>          		
-		    <!--storeHours-->
+            <div class="col-sm-8">
+                <div id="storeHours">
+        	<div class="textwidget"><b style="font-size:25px;">Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><br>
+        	<div class="half">
+                Sunday: 11:30AM–12AM <br> 
+                Monday: 11:30AM–12AM <br>		
+                Tuesday: 11:30AM–12AM <br>
+                Wednesday: 11:30AM–12AM <br>
+                Thursday: 11:30AM–12AM <br>
+                Friday: 11:30AM–12AM <br>
+                Saturday: 11:30AM–12AM <br>
+		    </div>
+            </div>
+        </div>
+
 		    </div>
 			<div id="site-generator">
              <span class="fa-stack fa-lg"><a href="" target="_blank">
@@ -193,10 +241,18 @@
 			<span class="web312"><a href="http://www.web312.com" target="blank"></a></span>
 			</div>
 			<!-- #site-generator -->
-    
-
 		</div>
         </footer>
+        <footer class="copy">
+            <a href="https://www.facebook.com/BobaBurger"> Facebook |</a>
+            <a href="https://instagram.com/bobaburger/"> Instagram |</a>
+            <a href="http://www.yelp.com/biz/boba-burger-morton-grove-2?osq=boba+burger"> Yelp </a><br>
+            <img alt="VISA" src="images/visa.png" width="50px">
+            <img alt="MasterCard" src="images/mastercard.png" width="50px">
+            <img alt="Discover" src="https://seeklogo.com/images/D/Discover_Card-logo-4BC5D7C02C-seeklogo.com.png" width="50px"><br>
+            Copyright  © 2018<br>
+    
+         </footer>
         <br/>
         </div>
     </body>
