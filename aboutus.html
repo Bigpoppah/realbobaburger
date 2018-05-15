@@ -1,40 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-        <title>Boba Burger- (add more description)</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Boba Burger</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+        <style>
+          body {
+            background-image: url("images/background.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            font-family: 'Patua One', cursive;
+          }
+          
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #262626;
+          }
+          
+          li {
+            float: right;
+          }
+            
+          .nav-item .nav-link:hover:not(.active) {
+            background-color: #111;
+          }
+            
+          .active {
+            background-color: #4CAF50;
+          }
+            
+          .header {
+            background-color: #262626;
+            color: #FFFFFF;
+          }
+            
+          .container {
+            border: 2px solid #000000;
+            background-color: #262626;
+            color: #FFFFFF;
+          }
+                 
+          .center {
+            text-align: center;
+          }
+            
+          .font-size {
+            font-size: 75px;
+          }
+            
+          hr {
+            background-color: white;
+          }
+            
+          .ul {
+            margin: 10px;
+          }
+            
+          .justify {
+            text-align: justify;
+            text-justify: inter-word;
+          }
+          
+          .socialmedia .items:hover{
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.67);
+            -moz-box-shadow:    0px 0px 10px 0px rgba(0, 255, 0, 0.67);
+            box-shadow:         0px 0px 15px 0px rgba(0, 255, 0, 0.67);
+          }
+          
+          .items {
+            margin: 1px 7px 0px 2px ;
+          }
+            
+          .logo {
+            position:absolute;
+            margin:15px 20px 20px -1100px;
+            padding:10px;
+          }
+          
+          .footer-logo {
+            text-align:left;
+          }
+          
+          .textwidget, .half {
+            position:relative;
+            margin:0px 10px 10px 10px;
+          }
+          
+          .half {
+            text-align: right;
+          }
+          
+          .textwidget {
+            text-align: right;
+            }
+            
+          .half2 {
+            text-align: right;
+          }
+            
+          .imgsize {
+            width:100px;
+            height:100px;
+          }
+            
+          .img {
+            padding: 4px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+          }
+          
+          .banner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+          }
+          
+          .maps {
+            padding: 4px;
+            display: block;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+          }
+          
+          body {
+            padding: 0;
+            margin: 0;
+          }
+          
+          .copy {
+            text-align:center;
+          }
+            
+          .big-logo {
+            position: relative;
+            margin: 5px 20px 20px 43px;
+          }
+        </style>
     </head>
-    <body>
-        <div class="container">
-            <div class="row">
-            <div class="col-sm-6" style="font-size:15px">(847) 410-7779 | EMAIL</div>
-            <div class="col-sm-6">
-                <ul class="socialmedia">
-                    <li class="items"><a rel="nofollow" href="https://instagram.com/bobaburger/"><img alt="Instagram" title="Instagram" src="images/social_instagram2.png" width="39" height="27"></a></li>
-                    <li class="items"><a rel="nofollow" href="http://www.yelp.com/biz/boba-burger-morton-grove-2?osq=boba+burger"><img alt="Yelp" title="Yelp" src="images/social_yelp2.png" width="27" height="23"></a></li>
-                    <li class="items"><a rel="nofollow" href="https://www.facebook.com/BobaBurger"><img alt="Facebook" title="Facebook" src="images/social_facebook2.png" width="29" height="22"></a></li>
-                </ul>
-            </div>
-                <img class="logo" src="images/bobaburger.png" alt="logo" width="120" height="120">
-                 </div>
-                <ul class="nav justify-content-end">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menu</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="contact.html">Contact</a>
-                  </li>
-                  
-                </ul>
+    
+    <body class="bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6" style="font-size:15px">(847) 410-7779 | EMAIL</div>
+          <div class="col-sm-6">
+            <ul class="socialmedia">
+              <li class="items"><a rel="nofollow" href="https://instagram.com/bobaburger/" target="_blank"><img alt="Instagram" title="Instagram" src="images/social_instagram2.png" width="39" height="27"></a></li>
+              <li class="items"><a rel="nofollow" href="http://www.yelp.com/biz/boba-burger-morton-grove-2?osq=boba+burger" target="_blank"><img alt="Yelp" title="Yelp" src="images/social_yelp2.png" width="27" height="23"></a></li>
+              <li class="items"><a rel="nofollow" href="https://www.facebook.com/BobaBurger" target="_blank"><img alt="Facebook" title="Facebook" src="images/social_facebook2.png" width="29" height="22"></a></li>
+            </ul>
+          </div>
+               <a href="index.html"><img class="logo" src="images/bobaburger.png" alt="logo" width="120" height="120"></a>
+        </div>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="aboutus.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <br>
+        <!-- CONTENTS                            CONTENTS                     CONTENTS-->
+        <div>
+          <img src="images/logoforaboutus3.jpg" class="banner"></img>
+        </div>
+        <hr/>
+        <!-- CONTENTS                            CONTENTS                     CONTENTS-->
+        <div class="row">
+          <div class="col-sm-4">
+          		  <div class="info">
+                  8530 Waukegan Rd<br>
+                  Morton Grove, IL 60053<br>
+                  Phone: (847) 410-7779 <br>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.3031341095743!2d-87.80211368416492!3d42.036679679209996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc8eb489df05f%3A0x4c526903ceba1273!2s8530+Waukegan+Rd%2C+Morton+Grove%2C+IL+60053!5e0!3m2!1sen!2sus!4v1525272163286" width="300" height="150" frameborder="0" style="border:0" class="maps" allowfullscreen></iframe>
+                  <br>
+                </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer-logo"><img src="images/bobaburger.png" alt="choma" class="big-logo banner"></div>
+              </div>
+            <div class="col-sm-5">
+              <div id="storeHours">
+          	    <div class="textwidget"><b style="font-size:25px;">Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><br>
+          	      <div class="half">
+                    Sunday: 11:30am–12:00am <br> 
+                    Monday: 11:30am–12:00am <br>		
+                    Tuesday: 11:30am–12:00am <br>
+                    Thursday: 11:30am–12:00am <br>
+                    Friday: 11:30am–12:00am <br>
+                    Saturday: 11:30am–12:00am <br>
+  		            </div>
+                </div>
+              </div>
+  		      </div>
+  		  </div>
+          <footer class="copy">
+            <a href="https://www.facebook.com/BobaBurger" target="_blank"> Facebook |</a>
+            <a href="http://www.yelp.com/biz/boba-burger-morton-grove-2?osq=boba+burger" target="_blank"> Yelp |</a>
+            <a href="https://instagram.com/bobaburger/" target="_blank"> Instagram</a> <br>
+            <img alt="VISA" src="images/visa.png" width="50px">
+            <img alt="MasterCard" src="images/mastercard.png" width="50px">
+            <img alt="Discover" src="https://seeklogo.com/images/D/Discover_Card-logo-4BC5D7C02C-seeklogo.com.png" width="50px"><br>
+            Copyright © 2018<br>
+          </footer>
+          <br/>
         </div>
     </body>
 </html>
