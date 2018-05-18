@@ -6,7 +6,9 @@
       <title>Boba Burger</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-        <style>
+      <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
           body {
             background-image: url("images/background.jpg");
             background-repeat: no-repeat;
@@ -117,6 +119,80 @@
             position: relative;
             margin: 5px 20px 20px 43px;
           }
+        }
+        
+          body {
+              font-family: Arial;
+              margin: 0 auto; /* Center website */
+              max-width: 800px; /* Max width */
+              padding: 20px;
+          }
+          
+          .heading {
+              font-size: 25px;
+              margin-right: 25px;
+          }
+          
+          .fa {
+              font-size: 25px;
+          }
+          
+          .checked {
+              color: orange;
+          }
+          
+          /* Three column layout */
+          .side {
+              float: left;
+              width: 15%;
+              margin-top:10px;
+          }
+          
+          .middle {
+              margin-top:10px;
+              float: left;
+              width: 70%;
+          }
+          
+          /* Place text to the right */
+          .right {
+              text-align: center;
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+              content: "";
+              display: table;
+              clear: both;
+          }
+          
+          /* The bar container */
+          .bar-container {
+              width: 100%;
+              background-color: #f1f1f1;
+              text-align: center;
+              color: white;
+          }
+          .stars {
+            text-align:center;
+          }
+          
+          /* Individual bars */
+          .bar-5 {width: 73%; height: 18px; background-color: #4CAF50;}
+          .bar-4 {width: 20%; height: 18px; background-color: #2196F3;}
+          .bar-3 {width: 3.5%; height: 18px; background-color: #00bcd4;}
+          .bar-2 {width: 1.2%; height: 18px; background-color: #ff9800;}
+          .bar-1 {width: .9%; height: 18px; background-color: #f44336;}
+          
+          /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+          @media (max-width: 400px) {
+              .side, .middle {
+                  width: 100%;
+              }
+              .right {
+                  display: none;
+              }
+          }
         </style>
     </head>
     
@@ -151,10 +227,79 @@
           </li>
         </ul>
         <br>
-        <!-- CONTENTS                            CONTENTS                     CONTENTS-->
+        <!-- CONTENTS                            CONTENTS                     CONTENTS
+        -->
         <div>
           <img src="images/aboutus.jpg" class="banner"></img>
         </div>
+        <br>
+        <span class="heading"><p style="text-align:center;">User Rating</p></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+              <p style="text-align:center;">4.7 average based on 317 reviews.</p>
+            <hr style="border:2px solid #f1f1f1">
+            
+            <div class="row">
+              <div class="side">
+                <div class="stars">5 stars</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-5"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>232</div>
+              </div>
+              <div class="side">
+                <div class="stars">4 stars</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-4"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>64</div>
+              </div>
+              <div class="side">
+                <div class="stars">3 stars</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-3"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>14</div>
+              </div>
+              <div class="side">
+                <div class="stars">2 stars</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-2"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>4</div>
+              </div>
+              <div class="side">
+                <div class="stars">1 stars</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-1"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>3</div>
+              </div>
+            </div>
+
         <hr/>
         <!-- CONTENTS                            CONTENTS                     CONTENTS-->
         <div class="row">
